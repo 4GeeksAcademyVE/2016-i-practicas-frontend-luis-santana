@@ -1,0 +1,14 @@
+/* CSS 3*/
+
+.esq-redondeadas
+{
+	border:12px solid #00ff00;
+	border-radius: 20px;
+}
+
+.bordes-con-imagen{
+	border: 10px solid transparent;
+	-webkit-border-image: url(border.png) 50% round;
+	-o-border-image: url(border.png) 50% round;
+	border-image: url(border.png) 30% round;
+}
