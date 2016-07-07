@@ -1,0 +1,16 @@
+/* CSS 3*/
+
+.contenedor
+{
+    
+	background: black;
+    width: 1400px;
+    height: 800px;
+    border: 10px dotted black;
+    padding: 15px;
+    background-clip: border-box;
+    
+    background-image: url(../img/bg1.png), url(../img/bg2.png), url(../img/bg3.png);
+    background-position: top left, center, bottom right;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
