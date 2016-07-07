@@ -1,0 +1,54 @@
+body{
+	border: 0;
+	padding: 0;
+	border: 0;
+}
+
+.menu_horizontal {
+	
+}
+
+.menu_horizontal li{
+	font-family: Verdana, "Arial", serif;
+	font-size: 14px;
+	list-style: none;
+	display: inline-block;
+}
+
+.menu_horizontal li a{
+	color: #FFFFFF;
+	text-decoration: none;
+	background: #ff9900;
+	padding: 10px 30px;
+}
+
+.menu_horizontal li a:hover{
+	background: #ff4433;
+	padding: 20px 30px;
+}
+
+
+.menu_vertical li{
+
+}
+
+.menu_vertical li a{
+
+}
+
+.menu_vertical li a:hover{
+
+}
+
+
+
+
+
+.enlace{
+	width: 240px;
+	height: 30px;
+	padding: 20px;
+	background-color: #ccc999;
+	cursor: pointer;
+}
+

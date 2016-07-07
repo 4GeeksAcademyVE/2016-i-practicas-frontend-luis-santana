@@ -1,0 +1,47 @@
+body {
+	background: blue;
+	/* Reseteo de propiedades del body */ 
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+.caja {
+	border: 1px solid black;
+	height: 300px;
+	width: 300px;
+}
+
+.cajita {
+	border: 1px solid black;
+	height: 50px;
+	width: 50px;
+}
+
+#caja_externa{
+	display:inline-block;
+	position: relative;
+	background: #cccccc;
+	margin:20px;
+}
+
+#caja_interna{
+	background: #666666;
+	height: 120px;
+	position: absolute;
+	width: 120px;
+	margin:40px;
+}
+
+#caja_en_la_esquina {
+	/* position: fixed; posiciona un elemento respecto a los bordes de la ventana del navegador */
+	position: fixed;
+	background: yellow;
+
+	/* top, right, bottom, left permiten ubicar un elemento respecto a otro. */
+	bottom: 10%;
+	right: 10%;
+	/* z-index: determina la posición en z (profundidad) del elemento */ 
+	z-index: 2; 
+}
+
