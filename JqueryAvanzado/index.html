@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery Avanzado</title>
+        <link rel="stylesheet" href="css/style.css" >
+    </head>
+
+    <body >
+        
+        <!--===================== ENCABEZADO - MENU INICIAL =====================-->
+        <h1>H1 numero 1</h1>
+        <h1 class="prueba">H1 numero 2</h1>
+        <button type="button">Click</button>
+        
+        <!--
+        <ul class="menu">
+            <li class="item">Elemento 1</li>
+            <li class="item">Elemento 2</li>
+            <li class="item">Elemento 3</li>
+            <li class="item">Elemento 4</li>
+        </ul>
+        -->
+        <div id="contenido">
+        
+        </div>
+        
+        <!--===================== Java Script =====================-->
+        <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                
+                $("button").on("click", function(){
+                    
+                    $.ajax({
+                        url: "otro.html",
+                        datatype: "text",
+                        success: function(data){
+                            $("#contenido").html(data);
+                        }
+                    });
+                });
+                
+            });
+            
+            
+            
+            /* 
+            $(document).ready(function(){
+
+                //$("h1").append("Uso de Jquery avanzado");
+                //$("h1").append("<p>hola mundo</p>");
+                
+                //$("<p>este es mi parrafo prepend</p>").prependTo("body");
+                //$("<p>este es mi parrafo append</p>").appendTo("body");
+                
+                $(".menu").append("<li>Elemento 5</li>");
+                $(".menu").prepend("<li>Elemento 0</li>");
+                
+                //$("<h2>Menu</h2>").insertBefore($(".menu"));
+                $("<h2>Menu</h2>").insertBefore(".menu");
+                $("<p>hola</p>").insertAfter($(".item"));
+                
+                $("#contenido").load("otro.html #menu3", function(){
+                    
+                    //alert("cargando archivos desde jquery");
+                });
+            });
+            
+            $("button").on("click", function(){
+                $("h1").append("<ul><li>lista 1</li></ul>");
+            });
+            */
+        </script>
+    </body>
+</html>
